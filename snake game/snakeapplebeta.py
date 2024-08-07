@@ -11,11 +11,11 @@ UP, DOWN, LEFT, RIGHT = 0, 1, 2, 3
 
 NORMAL = 50
 
-class Thangnguvaquatao:
+class Wompwomp:
     def __init__(self):
         pygame.init()  # Initialize pygame
         self.screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-        pygame.display.set_caption("thằng ngu và quả táo")
+        pygame.display.set_caption("womp womp game")
         self.clock = pygame.time.Clock()
         self.speed = NORMAL  # Always use the NORMAL difficulty
         self.set_game_icon()  # Set the game icon here
@@ -251,5 +251,5 @@ class Thangnguvaquatao:
             self.save_high_score()
 
 if __name__ == "__main__":
-    game = Thangnguvaquatao()
+    game = Wompwomp()
     game.run()
